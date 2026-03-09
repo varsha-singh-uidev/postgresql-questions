@@ -1,1 +1,38 @@
+1. What is SQL?
+Ans: SQL (Structured Query Language) is a standard programming language used to interact with relational databases. It is used to store, retrieve, update, and delete
+data. SQL is also used to create and modify database structures such as tables, views, and indexes.
+Example:  SELECT * FROM Employees;
+This query retrieves all the records from the Employees table.
+
+2. What is a Database?
+Ans: database is an organized collection of data that is stored and managed electronically. It allows users to efficiently store, retrieve, update, and manage
+data. Databases are used to handle large amounts of information in various applications such as websites, business systems, and applications.
+Example: 
+A customer database in an e-commerce website may store customer details like name, email, contact number, and purchase history.
+
+3. What are the types of SQL commands?
+Ans: SQL commands are categorized into five types based on their functionality:
+1. DDL (Data Definition Language) – Defines the structure of the database. (CREATE, ALTER, DROP, TRUNCATE)
+2. DML (Data Manipulation Language) – Manages data stored in the database. (SELECT, INSERT, UPDATE, DELETE)
+3. DCL (Data Control Language) – Controls access to the data. (GRANT, REVOKE)
+4. TCL (Transaction Control Language) – Manages transactions in the database. (COMMIT, ROLLBACK, SAVEPOINT)
+5. DQL (Data Query Language) – Retrieves data from the database. (SELECT)
+
+4. What is Primary Key?
+Ans: A Primary Key is a column or a combination of columns in a table that uniquely identifies each row in that table. It does not allow NULL values and must 
+always contain unique values.
+Key Features:
+1. Uniquely identifies each record
+2. Cannot have duplicate values
+3. Cannot contain NULL values
+4. Only one primary key is allowed per table
+
+5. What is Foreign Key?
+Ans: A Foreign Key is a column or combination of columns in one table that refers to the Primary Key in another table. It is used to create a relationship between 
+two tables and enforce referential integrity.
+Key Features:
+1. Establishes a relationship between two tables
+2. Can contain duplicate values
+3. Can accept NULL values
+4. Helps maintain data consistency
 
