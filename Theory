@@ -37,3 +37,60 @@ Key Features:
 3. Can accept NULL values
 4. Helps maintain data consistency
 
+Q. What is UNIQUE Key?
+Ans: A UNIQUE Key is a "constraint" that ensures all values in a column or combination of columns are distinct across all rows in the table. 
+It prevents duplicate values but allows NULL values.
+Key Features:
+1. Ensures uniqueness of each record in the column
+2. Allows NULL value (depending on the database)
+3. Multiple UNIQUE keys can be defined in a table
+4. Helps maintain data integrity
+
+Q. What is the Difference Between Primary Key and UNIQUE Key? 
+Ans: Primary Key
+      1. Uniquely identifies each row in a table. 
+      2. Does not allow NULL values. 
+      3. Only one primary key is allowed per table.
+      4. Automatically creates a unique clustered index.
+      5. Used to uniquely identify a record.
+     
+     UNIQUE Key
+      1. Ensures all values in the column are unique
+      2. Allows one NULL value (in most databases)
+      3. Multiple UNIQUE keys can be defined in a table
+      4. Creates a unique non-clustered index 
+      5. Used to enforce uniqueness in a column without being a primary identifier
+
+Q. What is NOT NULL Constraint?
+Ans: The NOT NULL constraint ensures that a column cannot have NULL values. It is used to enforce that every row must have a value in that column.
+Key Features:
+1. Prevents insertion of NULL values
+2. Ensures mandatory fields have data
+3. Can be applied to one or more columns
+
+Q. What is Default Constraint?
+Ans: The Default Constraint provides a default value for a column when no value is specified during the insertion of a new record.
+Key Features:
+1. Automatically assigns a default value if no value is provided
+2. Helps avoid NULL values in specific columns
+3. Can be applied to any data type
+4. Can be applied to one or more columns
+
+Q. What is the Difference Between DELETE, TRUNCATE, and DROP?
+Ans: DELETE
+        1. Removes specific rows based on a condition using the WHERE clause
+        2. Supports COMMIT and ROLLBACK (because it is a DML operation)
+        3. Does not change the table structure
+        4. Slower for large database (Row-by-Row Deletion)
+
+     TRUNCATE
+        1. Removes all rows from a table at once (no WHERE clause).
+        2. Cannot be rolled back easily in some databases.
+        3. Does not affect the structure of the table — columns, constraints, and schema remain.
+        4. Very fast because it deallocates data pages instead of deleting row by row.
+
+     DROP
+        1. Removes the entire table (structure + data).
+        2. Cannot be rolled back once committed (DDL operation).
+        3. Affects the structure — the table definition itself is deleted from the database.
+        4. Fast because it simply removes metadata and storage allocation for the table.
