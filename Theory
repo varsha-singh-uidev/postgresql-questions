@@ -93,4 +93,26 @@ Ans: DELETE
         1. Removes the entire table (structure + data).
         2. Cannot be rolled back once committed (DDL operation).
         3. Affects the structure — the table definition itself is deleted from the database.
-        4. Fast because it simply removes metadata and storage allocation for the table.
+        4. Fast because it simply removes metadata and storage allocation for the table
+
+What are Joins in SQL?
+Joins in SQL are used to combine data from two or more tables based on a related column
+between them.
+Types of Joins:
+1.INNER JOIN – Returns only matching rows from both tables.
+2.LEFT JOIN – Returns all rows from the left table and matching rows from the right table.
+RIGHT JOIN – Returns all rows from the right table and matching rows from the left
+table.
+3.
+4.FULL JOIN – Returns all rows from both tables (matching and non-matching).
+5.SELF JOIN – Joins a table with itself.
+6.CROSS JOIN – Returns the Cartesian product of both tables (all possible combinations).
+
+What is INNER JOIN?
+INNER JOIN is used to combine rows from two or more tables based on a matching
+condition between them. It returns only those records where the specified condition is true in
+both tables.
+Key Features:
+Returns matching rows from both tables
+Ignores unmatched rows
+Most commonly used type of join
