@@ -116,3 +116,20 @@ Key Features:
 Returns matching rows from both tables
 Ignores unmatched rows
 Most commonly used type of join
+
+
+What is LEFT JOIN?
+LEFT JOIN is used to return all records from the left table and the matching records from the
+right table. If no match is found, the result will contain NULL values from the right table.
+Key Features:
+Returns all rows from the left table
+Returns matching rows from the right table
+Displays NULL for non-matching rows from the right table
+
+What is RIGHT JOIN?
+RIGHT JOIN is used to return all records from the right table and the matching records from the
+left table. If no match is found, the result will contain NULL values from the left table.
+Key Features:
+Returns all rows from the right table
+Returns matching rows from the left table
+Displays NULL for non-matching rows from the left table
