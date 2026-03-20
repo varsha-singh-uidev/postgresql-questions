@@ -133,3 +133,21 @@ Key Features:
 Returns all rows from the right table
 Returns matching rows from the left table
 Displays NULL for non-matching rows from the left table
+
+What is Full join
+FULL JOIN combines the results of both LEFT JOIN and RIGHT JOIN. It returns all records
+from both tables, with matching rows from both sides where available. If there is no match, the
+result will contain NULL values on the side where no match was found.
+Key Features:
+Returns all rows from both tables
+Displays NULL where there is no match
+Useful to find unmatched records in both tables
+
+What is self join 
+Self Join is a type of join where a table is joined with itself to compare rows within the same table.
+It is used when a table contains a hierarchical relationship or when comparing values in the same
+table.
+Key Features:
+Joins a table with itself
+Requires table aliases to differentiate table instances
+Used to compare rows within the same table
